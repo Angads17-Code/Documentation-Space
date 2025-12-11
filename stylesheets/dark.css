@@ -1,0 +1,245 @@
+/* Dark mode for Read the Docs theme - Version 2 (Enhanced) */
+
+/* ===== MAIN COLORS ===== */
+:root {
+    --bg-main: #1a1a1a;
+    --bg-sidebar: #252525;
+    --bg-content: #1e1e1e;
+    --bg-code: #2d2d2d;
+    --text-main: #e0e0e0;
+    --text-dim: #b0b0b0;
+    --accent: #4a9eff;
+    --border: #3a3a3a;
+}
+
+/* ===== BODY & MAIN LAYOUT ===== */
+body {
+    background-color: var(--bg-main) !important;
+    color: var(--text-main) !important;
+}
+
+/* ===== SIDEBAR ===== */
+.wy-nav-side {
+    background: var(--bg-sidebar) !important;
+}
+
+.wy-side-nav-search {
+    background: var(--bg-sidebar) !important;
+    border-bottom: 1px solid var(--border) !important;
+}
+
+.wy-side-nav-search input[type="text"] {
+    background: var(--bg-code) !important;
+    color: var(--text-main) !important;
+    border: 1px solid var(--border) !important;
+}
+
+/* Sidebar links */
+.wy-menu-vertical a {
+    color: var(--text-main) !important;
+}
+
+.wy-menu-vertical a:hover {
+    background-color: var(--bg-code) !important;
+    color: var(--accent) !important;
+}
+
+.wy-menu-vertical li.current > a,
+.wy-menu-vertical li.current a {
+    background: var(--bg-code) !important;
+    border-right: 3px solid var(--accent) !important;
+    color: var(--accent) !important;
+}
+
+.wy-menu-vertical li.toctree-l1.current > a {
+    border-bottom: none !important;
+    border-top: none !important;
+}
+
+.wy-menu-vertical li.toctree-l2 a {
+    padding: 0.4045em 2.427em !important;
+}
+
+/* ===== CONTENT AREA ===== */
+.wy-nav-content-wrap {
+    background: var(--bg-main) !important;
+}
+
+.wy-nav-content {
+    background: var(--bg-content) !important;
+    max-width: 100% !important;
+}
+
+.rst-content {
+    color: var(--text-main) !important;
+}
+
+/* ===== HEADINGS ===== */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-main) !important;
+}
+
+/* ===== LINKS ===== */
+a {
+    color: var(--accent) !important;
+}
+
+a:hover {
+    color: #6bb3ff !important;
+}
+
+a:visited {
+    color: #8c7ae6 !important;
+}
+
+/* ===== CODE BLOCKS ===== */
+.rst-content pre,
+.rst-content code,
+code {
+    background: var(--bg-code) !important;
+    color: var(--text-main) !important;
+    border: 1px solid var(--border) !important;
+}
+
+.rst-content pre {
+    padding: 12px !important;
+}
+
+div[class^='highlight'] {
+    background: var(--bg-code) !important;
+    border: 1px solid var(--border) !important;
+}
+
+/* ===== INLINE CODE ===== */
+.rst-content code.literal {
+    background: var(--bg-code) !important;
+    color: #ff6b6b !important;
+    border: 1px solid var(--border) !important;
+}
+
+/* ===== TABLES ===== */
+.rst-content table.docutils {
+    border: 1px solid var(--border) !important;
+}
+
+.rst-content table.docutils thead {
+    background: var(--bg-code) !important;
+}
+
+.rst-content table.docutils th {
+    background: var(--bg-code) !important;
+    color: var(--text-main) !important;
+    border: 1px solid var(--border) !important;
+}
+
+.rst-content table.docutils td {
+    background: var(--bg-sidebar) !important;
+    color: var(--text-main) !important;
+    border: 1px solid var(--border) !important;
+}
+
+.rst-content table.docutils tr:hover td {
+    background: var(--bg-code) !important;
+}
+
+/* ===== ADMONITIONS (Note boxes) ===== */
+.rst-content .admonition {
+    background: var(--bg-sidebar) !important;
+    border-left: 3px solid var(--accent) !important;
+}
+
+.rst-content .admonition-title {
+    background: var(--bg-code) !important;
+    color: var(--text-main) !important;
+}
+
+.rst-content .note {
+    background: var(--bg-sidebar) !important;
+}
+
+.rst-content .warning {
+    background: var(--bg-sidebar) !important;
+    border-left-color: #f39c12 !important;
+}
+
+.rst-content .danger {
+    background: var(--bg-sidebar) !important;
+    border-left-color: #e74c3c !important;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: var(--bg-sidebar) !important;
+    color: var(--text-dim) !important;
+    border-top: 1px solid var(--border) !important;
+}
+
+footer span.commit {
+    color: var(--text-dim) !important;
+}
+
+/* ===== SEARCH RESULTS ===== */
+.wy-side-nav-search .wy-dropdown > a {
+    color: var(--text-main) !important;
+}
+
+/* ===== BREADCRUMBS ===== */
+.wy-breadcrumbs li a {
+    color: var(--accent) !important;
+}
+
+/* ===== MOBILE MENU ===== */
+.wy-nav-top {
+    background: var(--bg-sidebar) !important;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-main);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bg-code);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--border);
+}
+
+/* ===== HORIZONTAL RULES ===== */
+hr {
+    border-color: var(--border) !important;
+}
+
+/* ===== BLOCKQUOTES ===== */
+blockquote {
+    border-left: 3px solid var(--accent) !important;
+    background: var(--bg-sidebar) !important;
+    color: var(--text-main) !important;
+}
+
+/* ===== VERSION SELECTOR ===== */
+.rst-versions {
+    background: var(--bg-sidebar) !important;
+    border-top: 1px solid var(--border) !important;
+}
+
+.rst-versions a {
+    color: var(--accent) !important;
+}
+
+/* ===== PARAGRAPH TEXT ===== */
+p {
+    color: var(--text-main) !important;
+}
+
+/* ===== LIST ITEMS ===== */
+li {
+    color: var(--text-main) !important;
+}
