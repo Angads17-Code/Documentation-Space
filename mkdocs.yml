@@ -4,17 +4,28 @@ site_author: Angads17-Code
 
 theme:
   name: readthedocs
+  
+  # Enable dark mode support
+  color_mode: dark  # Options: light, dark, auto
+  user_color_mode_toggle: true  # Adds toggle button
+  
+  # Navigation settings
   highlightjs: true
   hljs_languages:
     - yaml
     - python
     - javascript
   navigation_depth: 4
+  collapse_navigation: false  # Keep sections expanded
+  sticky_navigation: true  # Sidebar scrolls with page
+  
+  # Optional: Add logo
+  # logo: images/logo.png
 
 plugins:
   - search
   - roamlinks  # Makes [[wikilinks]] work
-  - awesome-pages  # AUTO-GENERATES NAVIGATION!
+  - awesome-pages  # Auto-generates navigation
 
 markdown_extensions:
   - admonition
@@ -24,7 +35,3 @@ markdown_extensions:
       permalink: true
   - attr_list
   - md_in_html
-
-# Dark mode CSS
-extra_css:
-  - stylesheets/dark.css
