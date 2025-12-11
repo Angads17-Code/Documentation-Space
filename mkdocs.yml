@@ -3,7 +3,7 @@ site_description: Your club's documentation hub
 site_author: Angads17-Code
 
 theme:
-  name: material
+  name: readthedocs
   palette:
     primary: indigo
     accent: indigo
@@ -17,6 +17,13 @@ theme:
 plugins:
   - search
 
+nav:
+  - Home: index.md
+  - Welcome: Welcome.md
+  - Markdown Tutorial: Markdown tutorial.md
+  - Create a Link: create a link.md
+  - Space is Cool: Space is soo cool!.md
+  - Test: Test.md
 
 # Extra settings
 markdown_extensions:
