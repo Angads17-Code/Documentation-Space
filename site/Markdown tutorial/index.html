@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Markdown Tutorial - Documentation Space</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Markdown Tutorial";
+        var mkdocs_page_input_path = "Markdown tutorial.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Documentation Space
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Markdown Tutorial</a>
+    <ul class="current">
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Welcome/">Welcome</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Documentation Space</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Markdown Tutorial</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="markdown-formatting-guide-for-obsidian">Markdown Formatting Guide for Obsidian</h1>
+<p>Learn how to apply basic formatting to your Obsidian notes, using <a href="https://daringfireball.net/projects/markdown/">Markdown</a>. Import this as a note into your Obsidian Vault to view it and to test new themes. Certain community plugins are required for a few features.</p>
+<hr />
+<h1 id="basic-formatting-syntax">Basic Formatting Syntax</h1>
+<hr />
+<h2 id="paragraphs">Paragraphs</h2>
+<p>To create paragraphs, use a blank line to separate one or more lines of text.</p>
+<pre><code>This is a paragraph.
+
+This is another paragraph.
+</code></pre>
+<p>Multiple blank spaces</p>
+<p>Multiple adjacent blank spaces in and between paragraphs collapse to a single space when displaying a note in <a href="https://help.obsidian.md/Editing+and+formatting/Editing+and+previewing+Markdown#Editor%20views">Reading view</a> and on <a href="https://help.obsidian.md/Obsidian+Publish/Introduction+to+Obsidian+Publish">Obsidian Publish</a> sites.</p>
+<pre><code class="language-md">Multiple          adjacent          spaces
+
+
+
+and multiple newlines between paragraphs.
+</code></pre>
+<blockquote>
+<p>Multiple          adjacent          spaces</p>
+<p>and multiple newlines between paragraphs.</p>
+</blockquote>
+<p>If you want to add multiple spaces, you can add <code>&amp;nbsp;</code> (blank space) and <code>&lt;br&gt;</code> (newline) to your note.</p>
+<pre><code class="language-md">Multiple&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;adjacent&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;spaces
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+and multiple newlines between paragraphs.
+</code></pre>
+<blockquote>
+<p>Multiple&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adjacent&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spaces
+<br>
+<br>
+<br>
+and multiple newlines between paragraphs.</p>
+</blockquote>
+<h2 id="headings">Headings</h2>
+<p>To create a heading, add up to six <code>#</code> symbols before your heading text. The number of <code>#</code> symbols determines the size of the heading.</p>
+<pre><code class="language-md"># This is a heading 1
+## This is a heading 2
+### This is a heading 3
+#### This is a heading 4
+##### This is a heading 5
+###### This is a heading 6
+</code></pre>
+<h1 id="this-is-a-heading-1">This is a heading 1</h1>
+<h2 id="this-is-a-heading-2">This is a heading 2</h2>
+<h3 id="this-is-a-heading-3">This is a heading 3</h3>
+<h4 id="this-is-a-heading-4">This is a heading 4</h4>
+<h5 id="this-is-a-heading-5">This is a heading 5</h5>
+<h6 id="this-is-a-heading-6">This is a heading 6</h6>
+<h2 id="styling-text">Styling text</h2>
+<table>
+<thead>
+<tr>
+<th>Style</th>
+<th>Syntax</th>
+<th>Example</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bold</td>
+<td><code>** **</code> or <code>__ __</code></td>
+<td><code>**Bold text**</code></td>
+<td><strong>Bold text</strong></td>
+</tr>
+<tr>
+<td>Italic</td>
+<td><code>* *</code> or <code>_ _</code></td>
+<td><code>*Italic text*</code></td>
+<td><em>Italic text</em></td>
+</tr>
+<tr>
+<td>Strikethrough</td>
+<td><code>~~ ~~</code></td>
+<td><code>~~Striked out text~~</code></td>
+<td>~~Striked out text~~</td>
+</tr>
+<tr>
+<td>Highlight</td>
+<td><code>== ==</code></td>
+<td><code>==Highlighted text==</code></td>
+<td>==Highlighted text==</td>
+</tr>
+<tr>
+<td>Bold and nested italic</td>
+<td><code>** **</code> and <code>_ _</code></td>
+<td><code>**Bold text and _nested italic_ text**</code></td>
+<td><strong>Bold text and <em>nested italic</em> text</strong></td>
+</tr>
+<tr>
+<td>Bold and italic</td>
+<td><code>*** ***</code> or <code>___ ___</code></td>
+<td><code>***Bold and italic text***</code></td>
+<td><strong><em>Bold and italic text</em></strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="quotes">Quotes</h2>
+<p>You can quote text by adding a <code>&gt;</code> symbols before the text.</p>
+<pre><code class="language-md">&gt; Human beings face ever more complex and urgent problems, and their effectiveness in dealing with these problems is a matter that is critical to the stability and continued progress of society.
+
+\- Doug Engelbart, 1961
+</code></pre>
+<blockquote>
+<p>Human beings face ever more complex and urgent problems, and their effectiveness in dealing with these problems is a matter that is critical to the stability and continued progress of society.</p>
+</blockquote>
+<ul>
+<li>Doug Engelbart, 1961</li>
+</ul>
+<blockquote>
+<p>[!info]
+ You can turn your quote into a <a href="https://help.obsidian.md/Editing+and+formatting/Callouts">callout</a> by adding <code>[!info]</code> as the first line in a quote.</p>
+</blockquote>
+<h2 id="code">Code</h2>
+<p>You can format code both inline within a sentence, or in its own block.</p>
+<h3 id="inline-code">Inline code</h3>
+<p>You can format code within a sentence using single backticks.</p>
+<pre><code class="language-md">Text inside `backticks` on a line will be formatted like code.
+</code></pre>
+<p>Text inside <code>backticks</code> on a line will be formatted like code.</p>
+<p>If you want to put backticks in an inline code block, surround it with double backticks like so: inline <code>code with a backtick ` inside</code>.</p>
+<h3 id="code-blocks">Code blocks</h3>
+<p>To format a block of code, surround the code with triple backticks.</p>
+<pre><code>```
+cd ~/Desktop
+```
+</code></pre>
+<pre><code class="language-md">cd ~/Desktop
+</code></pre>
+<p>You can also create a code block by indenting the text using <code>Tab</code> or 4 blank spaces.</p>
+<pre><code class="language-md">    cd ~/Desktop
+</code></pre>
+<p>You can add syntax highlighting to a code block, by adding a language code after the first set of backticks.</p>
+<pre><code class="language-md">```js
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
+</code></pre>
+<pre><code class="language-js">function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+</code></pre>
+<p>Obsidian uses Prism for syntax highlighting. For more information, refer to <a href="https://prismjs.com/#supported-languages">Supported languages</a>.</p>
+<p>Note</p>
+<p><a href="https://help.obsidian.md/Live+preview+update">Live Preview mode</a> doesn't support PrismJS and may render syntax highlighting differently.</p>
+<h2 id="external-links">External links</h2>
+<p>If you want to link to an external URL, you can create an inline link by surrounding the link text in brackets (<code>[ ]</code>), and then the URL in parentheses (<code>( )</code>).</p>
+<pre><code class="language-md">[Obsidian Help](https://help.obsidian.md)
+</code></pre>
+<p><a href="https://help.obsidian.md/">Obsidian Help</a></p>
+<blockquote>
+<p>[!tip]
+ If you want to link to a file inside your vault, consider using an <a href="https://help.obsidian.md/Linking+notes+and+files/Internal+links">internal link</a> instead.</p>
+</blockquote>
+<p>You can also create external links to files in other vaults, by linking to an <a href="https://help.obsidian.md/Concepts/Obsidian+URI">Obsidian URI</a>.</p>
+<pre><code class="language-md">[Note](obsidian://open?vault=MainVault&amp;file=Note.md)
+</code></pre>
+<h3 id="escape-blank-spaces-in-links">Escape blank spaces in links</h3>
+<p>If your URL contains blank spaces, you need to escape them by replacing them with <code>%20</code>.</p>
+<pre><code class="language-md">[My Note](obsidian://open?vault=MainVault&amp;file=My%20Note.md)
+</code></pre>
+<p>You can also escape the URL by wrapping it with angled brackets (<code>&lt; &gt;</code>).</p>
+<pre><code class="language-md">[My Note](&lt;obsidian://open?vault=MainVault&amp;file=My Note.md&gt;)
+</code></pre>
+<h2 id="external-images">External images</h2>
+<p>You can add images with external URLs, by adding a <code>!</code> symbol before an <a href="https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#External%20links">external link</a>.</p>
+<pre><code class="language-md">![Engelbart](https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg)
+</code></pre>
+<p><img alt="Engelbart" src="https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg" /></p>
+<p>You can change the image dimensions, by adding <code>|120x160</code> to the link destination, where 120 is the width and 160 is the height.</p>
+<pre><code class="language-md">![Engelbart|100x145](https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg)
+</code></pre>
+<p><img alt="Engelbart|120x160" src="https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg" /></p>
+<p>If you only specify the width, the image scales according to its original aspect ratio by adding <code>|75]]</code> to the link destination, which scales the image to 70% of the original aspect ratio.</p>
+<pre><code class="language-md">![[Engelbart.jpg|75]](https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg)
+</code></pre>
+<p><img alt="Engelbart|75" src="https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg" /></p>
+<blockquote>
+<p>[!tip]
+ If you want to add an image from inside your vault, you can also <a href="https://help.obsidian.md/Linking+notes+and+files/Embedding+files#Embed%20an%20image%20in%20a%20note">embed an image in a note</a>.</p>
+</blockquote>
+<h2 id="lists">Lists</h2>
+<p>You can create an unordered list by adding a <code>-</code>, <code>*</code>, or <code>+</code> before the text.</p>
+<pre><code class="language-md">- First list item
+* Second list item
++ Third list item
+</code></pre>
+<ul>
+<li>First list item</li>
+<li>Second list items </li>
+<li>Third list item</li>
+</ul>
+<p>To create an ordered list, start each line with a number followed by a <code>.</code> symbol.</p>
+<pre><code class="language-md">1. First list item
+2. Second list item
+3. Third list item
+</code></pre>
+<ol>
+<li>First list item</li>
+<li>Second list item</li>
+<li>Third list item</li>
+</ol>
+<p>You can create a nested list by indenting one or more list items.</p>
+<pre><code class="language-md">1. First list item
+   2. Ordered nested list item
+3. Second list item
+   - Unordered nested list item
+</code></pre>
+<ol>
+<li>First list item<ol>
+<li>Ordered nested list item</li>
+</ol>
+</li>
+<li>Second list item<ul>
+<li>Unordered nested list item</li>
+</ul>
+</li>
+</ol>
+<p>You can press <code>Tab</code> or <code>Shift+Tab</code> to indent or unindent one or more selected list items.</p>
+<h3 id="task-lists">Task lists</h3>
+<p>To create a task list, start each list item with a hyphen and space followed by <code>[ ]</code>.</p>
+<pre><code class="language-md">- [x] This is a completed task.
+- [ ] This is an incomplete task.
+</code></pre>
+<ul>
+<li>[x] This is a completed task.</li>
+<li>[ ] This is an incomplete task.</li>
+</ul>
+<p>You can toggle a task in Reading view by selecting the checkbox.</p>
+<blockquote>
+<p>[!tip]
+ You can use any character inside the brackets to mark it as complete.</p>
+</blockquote>
+<pre><code class="language-md">- [x] Milk
+- [?] Eggs
+- [-] Eggs
+- [&gt;] Eggs
+</code></pre>
+<ul>
+<li>[x] Milk</li>
+<li>[?] Eggs</li>
+<li>[-] Eggs</li>
+<li>[&gt;] Eggs</li>
+</ul>
+<h2 id="horizontal-bar">Horizontal bar</h2>
+<p>You can use three or more stars <code>***</code>, hyphens <code>---</code>, or underscore <code>___</code> on its own line to add a horizontal bar. You can also separate symbols using spaces.</p>
+<pre><code class="language-md">***
+****
+* * *
+---
+----
+- - -
+___
+____
+_ _ _
+</code></pre>
+<hr />
+<h2 id="footnotes">Footnotes</h2>
+<p>You can add footnotes[^1] to your notes using the following syntax: [^note]</p>
+<pre><code class="language-md">This is a simple footnote[^1].
+
+[^1]: This is the referenced text.
+[^2]: Add 2 spaces at the start of each new line.
+  This lets you write footnotes that span multiple lines.
+[^note]: Named footnotes still appear as numbers, but can make it easier to identify and link references.
+</code></pre>
+<p>[^1]: This is a footnote.
+[^note]:  This is a named footnote.
+  Written over multiple lines.</p>
+<p>You can also inline footnotes in a sentence. Note that the caret goes outside the brackets. ^[This is an inline footnote]</p>
+<pre><code class="language-md">You can also use inline footnotes. ^[This is an inline footnote.]
+</code></pre>
+<blockquote>
+<p>[!note]
+ Inline footnotes only work in Reading View, not in Live Preview.</p>
+</blockquote>
+<h2 id="comments">Comments</h2>
+<p>You can add comments by wrapping text with <code>%%</code>. Comments are only visible in Editing view.</p>
+<pre><code class="language-md">This is an %%inline%% comment.
+
+%%
+This is a block comment.
+
+Block comments can span multiple lines.
+%%
+</code></pre>
+<hr />
+<hr />
+<h1 id="advanced-formatting-syntax">Advanced Formatting Syntax</h1>
+<hr />
+<h2 id="tables">Tables</h2>
+<p>You can create table using vertical bars (<code>|</code>) and hyphens (<code>-</code>). Vertical bars separate columns, and hyphens define the column header.</p>
+<pre><code class="language-md">| First name | Last name |
+| ---------- | --------- |
+| Max        | Planck    |
+| Marie      | Curie     |
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>First name</th>
+<th>Last name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Max</td>
+<td>Planck</td>
+</tr>
+<tr>
+<td>Marie</td>
+<td>Curie</td>
+</tr>
+</tbody>
+</table>
+<p>The vertical bars or either side of the table are optional.</p>
+<p>Cells don't need to be perfectly aligned with the columns. Each header row must have at least two hyphens.</p>
+<pre><code class="language-md">First name | Last name
+-- | --
+Max | Planck
+Marie | Curie
+</code></pre>
+<h3 id="format-content-within-a-table">Format content within a table</h3>
+<p>You can use <a href="https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax">basic formatting syntax</a> to style content within a table.</p>
+<table>
+<thead>
+<tr>
+<th>First column</th>
+<th>Second column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://help.obsidian.md/Linking+notes+and+files/Internal+links">Internal links</a></td>
+<td>Link to a file <em>within</em> your <strong>vault</strong>.</td>
+</tr>
+<tr>
+<td><a href="https://help.obsidian.md/Linking+notes+and+files/Embedding+files">Embedding files</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Vertical bars in tables</p>
+<p>If you want to use <a href="https://help.obsidian.md/Linking+notes+and+files/Aliases">aliases</a>, or to <a href="https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#External%20images">resize an image</a> in your table, you need to add a <code>\</code> before the vertical bar.</p>
+<pre><code class="language-md">| First column | Second column |
+| -- | -- |
+|[[Markdown Formatting Guide#Basic Formatting Syntax\|Markdown Basics]]|![Engelbart\|75](https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg)|
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>First column</th>
+<th>Second column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[[Markdown Formatting Guide#Basic Formatting Syntax|Markdown Basics]]</td>
+<td><img alt="Engelbart|75" src="https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg" /></td>
+</tr>
+</tbody>
+</table>
+<p>You can align text to the left, right, or center of a column by adding colons (<code>:</code>) to the header row.</p>
+<pre><code class="language-md">Left-aligned text | Center-aligned text | Right-aligned text
+:-- | :--: | --:
+Content | Content | Content
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Left-aligned text</th>
+<th style="text-align: center;">Center-aligned text</th>
+<th style="text-align: right;">Right-aligned text</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Content</td>
+<td style="text-align: center;">Content</td>
+<td style="text-align: right;">Content</td>
+</tr>
+</tbody>
+</table>
+<h2 id="diagram">Diagram</h2>
+<p>You can add diagrams and charts to your notes, using <a href="https://mermaid-js.github.io/">Mermaid</a>. Mermaid supports a range of diagrams, such as <a href="https://mermaid.js.org/syntax/flowchart.html">flow charts</a>, <a href="https://mermaid.js.org/syntax/sequenceDiagram.html">sequence diagrams</a>, and <a href="https://mermaid.js.org/syntax/timeline.html">timelines</a>.</p>
+<blockquote>
+<p>[!tip]
+You can also try Mermaid's <a href="https://mermaid-js.github.io/mermaid-live-editor">Live Editor</a> to help you build diagrams before you include them in your notes.</p>
+</blockquote>
+<p>To add a Mermaid diagram, create a <code>mermaid</code> <a href="https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Code%20blocks">code block</a>.</p>
+<pre><code class="language-md">```mermaid
+sequenceDiagram
+    Alice-&gt;&gt;+John: Hello John, how are you?
+    Alice-&gt;&gt;+John: John, can you hear me?
+    John--&gt;&gt;-Alice: Hi Alice, I can hear you!
+    John--&gt;&gt;-Alice: I feel great!
+```
+</code></pre>
+<pre><code class="language-mermaid">sequenceDiagram
+    Alice-&gt;&gt;+John: Hello John, how are you?
+    Alice-&gt;&gt;+John: John, can you hear me?
+    John--&gt;&gt;-Alice: Hi Alice, I can hear you!
+    John--&gt;&gt;-Alice: I feel great!
+</code></pre>
+<pre><code class="language-md">```mermaid
+graph TD
+
+Biology --&gt; Chemistry
+```
+</code></pre>
+<pre><code class="language-mermaid">graph TD
+
+Biology --&gt; Chemistry
+</code></pre>
+<h3 id="linking-files-in-a-diagram">Linking files in a diagram</h3>
+<p>You can create <a href="https://help.obsidian.md/Linking+notes+and+files/Internal+links">internal links</a> in your diagrams by attaching the <code>internal-link</code> <a href="https://mermaid.js.org/syntax/flowchart.html#classes">class</a> to your nodes.</p>
+<pre><code class="language-md">```mermaid
+graph TD
+
+Biology --&gt; Chemistry
+
+class Biology,Chemistry internal-link;
+```
+</code></pre>
+<pre><code class="language-mermaid">graph TD
+
+Biology --&gt; Chemistry
+
+class Biology,Chemistry internal-link;
+</code></pre>
+<blockquote>
+<p>[!note]</p>
+<p>Internal links from diagrams don't show up in the <a href="https://help.obsidian.md/Plugins/Graph+view">Graph view</a>.</p>
+<p>If you have many nodes in your diagrams, you can use the following snippet.</p>
+<p><code>`md</code>mermaid
+graph TD</p>
+<p>A[Biology]
+B[Chemistry]</p>
+<p>A --&gt; B</p>
+<p>class A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z internal-link;
+```
+````</p>
+</blockquote>
+<pre><code class="language-mermaid">graph TD
+
+A[Biology]
+B[Chemistry]
+
+A --&gt; B
+
+class A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z internal-link;
+</code></pre>
+<p>This way, each letter node becomes an internal link, with the <a href="https://mermaid.js.org/syntax/flowchart.html#a-node-with-text">node text</a> as the link text.</p>
+<blockquote>
+<p>[!note]
+If you use special characters in your note names, you need to put the note name in double quotes.
+<code>class "⨳ special character" internal-link</code></p>
+<p>Or, <code>A["⨳ special character"]</code>. </p>
+</blockquote>
+<p>For more information about creating diagrams, refer to the <a href="https://mermaid.js.org/intro/">official Mermaid docs</a>.</p>
+<h2 id="math">Math</h2>
+<p>You can add math expressions to your notes using <a href="http://docs.mathjax.org/en/latest/basic/mathjax.html">MathJax</a> and the LaTeX notation.</p>
+<p>To add a MathJax expression to your note, surround it with double dollar signs (<code>$$</code>).</p>
+<pre><code class="language-md">$$
+\begin{vmatrix}a &amp; b\\
+c &amp; d
+\end{vmatrix}=ad-bc
+$$
+</code></pre>
+<p>$$
+\begin{vmatrix}a &amp; b\
+c &amp; d
+\end{vmatrix}=ad-bc
+$$</p>
+<p>You can also inline math expressions by wrapping it in <code>$</code> symbols.</p>
+<pre><code class="language-md">This is an inline math expression: $e^{2i\pi} = 1$.
+</code></pre>
+<p>This is an inline math expression: $e^{2i\pi} = 1$.</p>
+<p>For more information about the syntax, refer to <a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">MathJax basic tutorial and quick reference</a>.</p>
+<p>For a list of supported MathJax packages, refer to <a href="http://docs.mathjax.org/en/latest/input/tex/extensions/index.html">The TeX/LaTeX Extension List</a>.</p>
+<h2 id="links">Links</h2>
+<p>This Guide was derived using:
+- <a href="https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax">Basic formatting syntax</a>
+- <a href="https://help.obsidian.md/Editing+and+formatting/Advanced+formatting+syntax">Advanced formatting syntax</a>
+- <a href="https://help.obsidian.md/Editing+and+formatting/Obsidian+Flavored+Markdown">Obsidian Flavored Markdown</a></p>
+<hr />
+<hr />
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Welcome/" class="btn btn-neutral float-right" title="Welcome">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Welcome/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
