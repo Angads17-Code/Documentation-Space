@@ -1,3 +1,3 @@
 This is a test t see of the site updates automatically. 
 
-![UWU](images/boykisser.jpg)
+![UWU](images/Boykisser.jpg)
