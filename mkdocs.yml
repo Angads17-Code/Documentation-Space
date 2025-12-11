@@ -3,35 +3,44 @@ site_description: Your club's documentation hub
 site_author: Angads17-Code
 
 theme:
-  name: readthedocs
+  name: material  # We'll configure it to look like docs
   
-  # Enable dark mode support
-  color_mode: dark  # Options: light, dark, auto
-  user_color_mode_toggle: true  # Adds toggle button
+  palette:
+    # Dark mode (default)
+    - scheme: slate
+      primary: blue grey
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+    
+    # Light mode
+    - scheme: default
+      primary: blue grey
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
   
-  # Navigation settings
-  highlightjs: true
-  hljs_languages:
-    - yaml
-    - python
-    - javascript
-  navigation_depth: 4
-  collapse_navigation: false  # Keep sections expanded
-  sticky_navigation: true  # Sidebar scrolls with page
-  
-  # Optional: Add logo
-  # logo: images/logo.png
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - toc.integrate  # TOC in sidebar (vertical!)
+    - navigation.top
+    - search.suggest
+    - search.highlight
 
 plugins:
   - search
-  - roamlinks  # Makes [[wikilinks]] work
-  - awesome-pages  # Auto-generates navigation
+  - roamlinks
+  - awesome-pages
 
 markdown_extensions:
   - admonition
-  - codehilite:
-      guess_lang: false
-  - toc:
-      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
   - attr_list
   - md_in_html
+  - toc:
+      permalink: true
