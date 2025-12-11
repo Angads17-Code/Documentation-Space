@@ -1,126 +1,598 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Angads17-Code" />
-      <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Markdown Tutorial - Documentation Space</title>
-    <link rel="stylesheet" href="../css/theme.css" />
-    <link rel="stylesheet" href="../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
     
-      <script>
-        // Current page data
-        var mkdocs_page_name = "Markdown Tutorial";
-        var mkdocs_page_input_path = "Markdown tutorial.md";
-        var mkdocs_page_url = null;
-      </script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Your club's documentation hub">
+      
+      
+        <meta name="author" content="Angads17-Code">
+      
+      
+      
+        <link rel="prev" href="../Welcome/">
+      
+      
+        <link rel="next" href="../create%20a%20link/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
-    <!--[if lt IE 9]>
-      <script src="../js/html5shiv.min.js"></script>
-    <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> 
-</head>
+    
+      
+        <title>Markdown Tutorial - Documentation Space</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
 
-<body class="wy-body-for-nav" role="document">
 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> Documentation Space
-        </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../Welcome/">Welcome</a>
-                </li>
-              </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">Markdown Tutorial</a>
-    <ul class="current">
-    </ul>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../create%20a%20link/">Create a Link</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../Space%20is%20soo%20cool%21/">Space is Cool</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../Test/">Test</a>
-                </li>
-              </ul>
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#markdown-formatting-guide-for-obsidian" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Documentation Space" class="md-header__button md-logo" aria-label="Documentation Space" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentation Space
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Markdown Tutorial
+            
+          </span>
+        </div>
       </div>
     </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">Documentation Space</a>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
         
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
       </nav>
-      <div class="wy-nav-content">
-        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Markdown Tutorial</li>
-    <li class="wy-breadcrumbs-aside">
-    </li>
-  </ul>
-  <hr/>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-            <div class="section" itemprop="articleBody">
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Welcome/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Welcome
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Markdown Tutorial
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../create%20a%20link/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Create a Link
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Space%20is%20soo%20cool%21/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Space is Cool
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Test/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Test
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
               
-                <h1 id="markdown-formatting-guide-for-obsidian">Markdown Formatting Guide for Obsidian<a class="headerlink" href="#markdown-formatting-guide-for-obsidian" title="Permanent link">&para;</a></h1>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Documentation Space" class="md-nav__button md-logo" aria-label="Documentation Space" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Documentation Space
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Welcome/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Markdown Tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../create%20a%20link/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create a Link
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Space%20is%20soo%20cool%21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Space is Cool
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Test
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="markdown-formatting-guide-for-obsidian">Markdown Formatting Guide for Obsidian<a class="headerlink" href="#markdown-formatting-guide-for-obsidian" title="Permanent link">&para;</a></h1>
 <p>Learn how to apply basic formatting to your Obsidian notes, using <a href="https://daringfireball.net/projects/markdown/">Markdown</a>. Import this as a note into your Obsidian Vault to view it and to test new themes. Certain community plugins are required for a few features.</p>
 <hr />
 <h1 id="basic-formatting-syntax">Basic Formatting Syntax<a class="headerlink" href="#basic-formatting-syntax" title="Permanent link">&para;</a></h1>
 <hr />
 <h2 id="paragraphs">Paragraphs<a class="headerlink" href="#paragraphs" title="Permanent link">&para;</a></h2>
 <p>To create paragraphs, use a blank line to separate one or more lines of text.</p>
-<div class="codehilite"><pre><span></span><code>This is a paragraph.
-
-This is another paragraph.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>This is a paragraph.
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>This is another paragraph.
 </code></pre></div>
-
 <p>Multiple blank spaces</p>
 <p>Multiple adjacent blank spaces in and between paragraphs collapse to a single space when displaying a note in <a href="https://help.obsidian.md/Editing+and+formatting/Editing+and+previewing+Markdown#Editor%20views">Reading view</a> and on <a href="https://help.obsidian.md/Obsidian+Publish/Introduction+to+Obsidian+Publish">Obsidian Publish</a> sites.</p>
-<div class="codehilite"><pre><span></span><code>Multiple          adjacent          spaces
-
-
-
-and multiple newlines between paragraphs.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Multiple          adjacent          spaces
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>and multiple newlines between paragraphs.
 </code></pre></div>
-
 <blockquote>
 <p>Multiple          adjacent          spaces</p>
 <p>and multiple newlines between paragraphs.</p>
 </blockquote>
 <p>If you want to add multiple spaces, you can add <code>&amp;nbsp;</code> (blank space) and <code>&lt;br&gt;</code> (newline) to your note.</p>
-<div class="codehilite"><pre><span></span><code>Multiple&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;adjacent&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;spaces
-&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;
-and multiple newlines between paragraphs.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Multiple&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;adjacent&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;spaces
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>&lt;br&gt;
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>&lt;br&gt;
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>&lt;br&gt;
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>and multiple newlines between paragraphs.
 </code></pre></div>
-
 <blockquote>
 <p>Multiple&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adjacent&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spaces
 <br>
@@ -130,14 +602,13 @@ and multiple newlines between paragraphs.</p>
 </blockquote>
 <h2 id="headings">Headings<a class="headerlink" href="#headings" title="Permanent link">&para;</a></h2>
 <p>To create a heading, add up to six <code>#</code> symbols before your heading text. The number of <code>#</code> symbols determines the size of the heading.</p>
-<div class="codehilite"><pre><span></span><code><span class="gh"># This is a heading 1</span>
-<span class="gu">## This is a heading 2</span>
-<span class="gu">### This is a heading 3</span>
-<span class="gu">#### This is a heading 4</span>
-<span class="gu">##### This is a heading 5</span>
-<span class="gu">###### This is a heading 6</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="gh"># This is a heading 1</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="gu">## This is a heading 2</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="gu">### This is a heading 3</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="gu">#### This is a heading 4</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="gu">##### This is a heading 5</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="gu">###### This is a heading 6</span>
 </code></pre></div>
-
 <h1 id="this-is-a-heading-1">This is a heading 1<a class="headerlink" href="#this-is-a-heading-1" title="Permanent link">&para;</a></h1>
 <h2 id="this-is-a-heading-2">This is a heading 2<a class="headerlink" href="#this-is-a-heading-2" title="Permanent link">&para;</a></h2>
 <h3 id="this-is-a-heading-3">This is a heading 3<a class="headerlink" href="#this-is-a-heading-3" title="Permanent link">&para;</a></h3>
@@ -195,11 +666,10 @@ and multiple newlines between paragraphs.</p>
 </table>
 <h2 id="quotes">Quotes<a class="headerlink" href="#quotes" title="Permanent link">&para;</a></h2>
 <p>You can quote text by adding a <code>&gt;</code> symbols before the text.</p>
-<div class="codehilite"><pre><span></span><code><span class="k">&gt; </span><span class="ge">Human beings face ever more complex and urgent problems, and their effectiveness in dealing with these problems is a matter that is critical to the stability and continued progress of society.</span>
-
-\- Doug Engelbart, 1961
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">&gt; </span><span class="ge">Human beings face ever more complex and urgent problems, and their effectiveness in dealing with these problems is a matter that is critical to the stability and continued progress of society.</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>\- Doug Engelbart, 1961
 </code></pre></div>
-
 <blockquote>
 <p>Human beings face ever more complex and urgent problems, and their effectiveness in dealing with these problems is a matter that is critical to the stability and continued progress of society.</p>
 </blockquote>
@@ -214,83 +684,70 @@ and multiple newlines between paragraphs.</p>
 <p>You can format code both inline within a sentence, or in its own block.</p>
 <h3 id="inline-code">Inline code<a class="headerlink" href="#inline-code" title="Permanent link">&para;</a></h3>
 <p>You can format code within a sentence using single backticks.</p>
-<div class="codehilite"><pre><span></span><code>Text inside <span class="sb">`backticks`</span> on a line will be formatted like code.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Text inside <span class="sb">`backticks`</span> on a line will be formatted like code.
 </code></pre></div>
-
 <p>Text inside <code>backticks</code> on a line will be formatted like code.</p>
 <p>If you want to put backticks in an inline code block, surround it with double backticks like so: inline <code>code with a backtick ` inside</code>.</p>
 <h3 id="code-blocks">Code blocks<a class="headerlink" href="#code-blocks" title="Permanent link">&para;</a></h3>
 <p>To format a block of code, surround the code with triple backticks.</p>
-<div class="codehilite"><pre><span></span><code>```
-cd ~/Desktop
-```
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>```
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>cd ~/Desktop
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>```
 </code></pre></div>
-
-<div class="codehilite"><pre><span></span><code>cd ~/Desktop
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>cd ~/Desktop
 </code></pre></div>
-
 <p>You can also create a code block by indenting the text using <code>Tab</code> or 4 blank spaces.</p>
-<div class="codehilite"><pre><span></span><code>    cd ~/Desktop
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>    cd ~/Desktop
 </code></pre></div>
-
 <p>You can add syntax highlighting to a code block, by adding a language code after the first set of backticks.</p>
-<div class="codehilite"><pre><span></span><code><span class="sb">```js</span>
-<span class="kd">function</span><span class="w"> </span><span class="nx">fancyAlert</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">$</span><span class="p">.</span><span class="nx">facebox</span><span class="p">({</span><span class="nx">div</span><span class="o">:</span><span class="s1">&#39;#foo&#39;</span><span class="p">})</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">}</span>
-<span class="sb">```</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="sb">```js</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kd">function</span><span class="w"> </span><span class="nx">fancyAlert</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">    </span><span class="nx">$</span><span class="p">.</span><span class="nx">facebox</span><span class="p">({</span><span class="nx">div</span><span class="o">:</span><span class="s1">&#39;#foo&#39;</span><span class="p">})</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="p">}</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="sb">```</span>
 </code></pre></div>
-
-<div class="codehilite"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">fancyAlert</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">$</span><span class="p">.</span><span class="nx">facebox</span><span class="p">({</span><span class="nx">div</span><span class="o">:</span><span class="s1">&#39;#foo&#39;</span><span class="p">})</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">fancyAlert</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">    </span><span class="nx">$</span><span class="p">.</span><span class="nx">facebox</span><span class="p">({</span><span class="nx">div</span><span class="o">:</span><span class="s1">&#39;#foo&#39;</span><span class="p">})</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="p">}</span>
 </code></pre></div>
-
 <p>Obsidian uses Prism for syntax highlighting. For more information, refer to <a href="https://prismjs.com/#supported-languages">Supported languages</a>.</p>
 <p>Note</p>
 <p><a href="https://help.obsidian.md/Live+preview+update">Live Preview mode</a> doesn't support PrismJS and may render syntax highlighting differently.</p>
 <h2 id="external-links">External links<a class="headerlink" href="#external-links" title="Permanent link">&para;</a></h2>
 <p>If you want to link to an external URL, you can create an inline link by surrounding the link text in brackets (<code>[ ]</code>), and then the URL in parentheses (<code>( )</code>).</p>
-<div class="codehilite"><pre><span></span><code>[<span class="nt">Obsidian Help</span>](<span class="na">https://help.obsidian.md</span>)
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>[<span class="nt">Obsidian Help</span>](<span class="na">https://help.obsidian.md</span>)
 </code></pre></div>
-
 <p><a href="https://help.obsidian.md/">Obsidian Help</a></p>
 <blockquote>
 <p>[!tip]
  If you want to link to a file inside your vault, consider using an <a href="https://help.obsidian.md/Linking+notes+and+files/Internal+links">internal link</a> instead.</p>
 </blockquote>
 <p>You can also create external links to files in other vaults, by linking to an <a href="https://help.obsidian.md/Concepts/Obsidian+URI">Obsidian URI</a>.</p>
-<div class="codehilite"><pre><span></span><code>[<span class="nt">Note</span>](<span class="na">obsidian://open?vault=MainVault&amp;file=Note.md</span>)
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>[<span class="nt">Note</span>](<span class="na">obsidian://open?vault=MainVault&amp;file=Note.md</span>)
 </code></pre></div>
-
 <h3 id="escape-blank-spaces-in-links">Escape blank spaces in links<a class="headerlink" href="#escape-blank-spaces-in-links" title="Permanent link">&para;</a></h3>
 <p>If your URL contains blank spaces, you need to escape them by replacing them with <code>%20</code>.</p>
-<div class="codehilite"><pre><span></span><code>[<span class="nt">My Note</span>](<span class="na">obsidian://open?vault=MainVault&amp;file=My%20Note.md</span>)
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>[<span class="nt">My Note</span>](<span class="na">obsidian://open?vault=MainVault&amp;file=My%20Note.md</span>)
 </code></pre></div>
-
 <p>You can also escape the URL by wrapping it with angled brackets (<code>&lt; &gt;</code>).</p>
-<div class="codehilite"><pre><span></span><code>[<span class="nt">My Note</span>](<span class="na">&lt;obsidian://open?vault=MainVault&amp;file=My Note.md&gt;</span>)
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>[<span class="nt">My Note</span>](<span class="na">&lt;obsidian://open?vault=MainVault&amp;file=My Note.md&gt;</span>)
 </code></pre></div>
-
 <h2 id="external-images">External images<a class="headerlink" href="#external-images" title="Permanent link">&para;</a></h2>
 <p>You can add images with external URLs, by adding a <code>!</code> symbol before an <a href="https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#External%20links">external link</a>.</p>
-<div class="codehilite"><pre><span></span><code>![<span class="nt">Engelbart</span>](<span class="na">https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg</span>)
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>![<span class="nt">Engelbart</span>](<span class="na">https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg</span>)
 </code></pre></div>
-
 <p><img alt="Engelbart" src="https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg" /></p>
 <p>You can change the image dimensions, by adding <code>|120x160</code> to the link destination, where 120 is the width and 160 is the height.</p>
-<div class="codehilite"><pre><span></span><code>![<span class="nt">Engelbart|100x145</span>](<span class="na">https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg</span>)
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>![<span class="nt">Engelbart|100x145</span>](<span class="na">https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg</span>)
 </code></pre></div>
-
 <p><img alt="Engelbart|120x160" src="https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg" /></p>
 <p>If you only specify the width, the image scales according to its original aspect ratio by adding <code>|75]]</code> to the link destination, which scales the image to 70% of the original aspect ratio.</p>
-<div class="codehilite"><pre><span></span><code>![[Engelbart.jpg|75]](https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg)
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>![[Engelbart.jpg|75]](https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg)
 </code></pre></div>
-
 <p><img alt="Engelbart|75" src="https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg" /></p>
 <blockquote>
 <p>[!tip]
@@ -298,34 +755,31 @@ cd ~/Desktop
 </blockquote>
 <h2 id="lists">Lists<a class="headerlink" href="#lists" title="Permanent link">&para;</a></h2>
 <p>You can create an unordered list by adding a <code>-</code>, <code>*</code>, or <code>+</code> before the text.</p>
-<div class="codehilite"><pre><span></span><code><span class="k">-</span><span class="w"> </span>First list item
-<span class="k">*</span><span class="w"> </span>Second list item
-+ Third list item
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="k">-</span><span class="w"> </span>First list item
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="k">*</span><span class="w"> </span>Second list item
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>+ Third list item
 </code></pre></div>
-
 <ul>
 <li>First list item</li>
 <li>Second list items </li>
 <li>Third list item</li>
 </ul>
 <p>To create an ordered list, start each line with a number followed by a <code>.</code> symbol.</p>
-<div class="codehilite"><pre><span></span><code><span class="k">1.</span> First list item
-<span class="k">2.</span> Second list item
-<span class="k">3.</span> Third list item
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="k">1.</span> First list item
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="k">2.</span> Second list item
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="k">3.</span> Third list item
 </code></pre></div>
-
 <ol>
 <li>First list item</li>
 <li>Second list item</li>
 <li>Third list item</li>
 </ol>
 <p>You can create a nested list by indenting one or more list items.</p>
-<div class="codehilite"><pre><span></span><code><span class="k">1.</span> First list item
-<span class="w">   </span><span class="k">2.</span> Ordered nested list item
-<span class="k">3.</span> Second list item
-<span class="w">   </span><span class="k">-</span><span class="w"> </span>Unordered nested list item
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="k">1.</span> First list item
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="w">   </span><span class="k">2.</span> Ordered nested list item
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="k">3.</span> Second list item
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="w">   </span><span class="k">-</span><span class="w"> </span>Unordered nested list item
 </code></pre></div>
-
 <ol>
 <li>First list item<ol>
 <li>Ordered nested list item</li>
@@ -339,10 +793,9 @@ cd ~/Desktop
 <p>You can press <code>Tab</code> or <code>Shift+Tab</code> to indent or unindent one or more selected list items.</p>
 <h3 id="task-lists">Task lists<a class="headerlink" href="#task-lists" title="Permanent link">&para;</a></h3>
 <p>To create a task list, start each list item with a hyphen and space followed by <code>[ ]</code>.</p>
-<div class="codehilite"><pre><span></span><code><span class="k">- [x]</span> This is a completed task.
-<span class="k">- [ ]</span> This is an incomplete task.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="k">- [x]</span> This is a completed task.
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="k">- [ ]</span> This is an incomplete task.
 </code></pre></div>
-
 <ul>
 <li>[x] This is a completed task.</li>
 <li>[ ] This is an incomplete task.</li>
@@ -352,12 +805,11 @@ cd ~/Desktop
 <p>[!tip]
  You can use any character inside the brackets to mark it as complete.</p>
 </blockquote>
-<div class="codehilite"><pre><span></span><code><span class="k">- [x]</span> Milk
-<span class="k">-</span><span class="w"> </span>[?] Eggs
-<span class="k">-</span><span class="w"> </span>[-] Eggs
-<span class="k">-</span><span class="w"> </span>[&gt;] Eggs
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="k">- [x]</span> Milk
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="k">-</span><span class="w"> </span>[?] Eggs
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="k">-</span><span class="w"> </span>[-] Eggs
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="k">-</span><span class="w"> </span>[&gt;] Eggs
 </code></pre></div>
-
 <ul>
 <li>[x] Milk</li>
 <li>[?] Eggs</li>
@@ -366,62 +818,57 @@ cd ~/Desktop
 </ul>
 <h2 id="horizontal-bar">Horizontal bar<a class="headerlink" href="#horizontal-bar" title="Permanent link">&para;</a></h2>
 <p>You can use three or more stars <code>***</code>, hyphens <code>---</code>, or underscore <code>___</code> on its own line to add a horizontal bar. You can also separate symbols using spaces.</p>
-<div class="codehilite"><pre><span></span><code>***
-****
-<span class="gu">* * *</span>
-<span class="gu">---</span>
-----
-<span class="k">-</span><span class="w"> </span>- -
-___
-____
-_ _ _
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>***
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>****
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="gu">* * *</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="gu">---</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>----
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="k">-</span><span class="w"> </span>- -
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>___
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>____
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>_ _ _
 </code></pre></div>
-
 <hr />
 <h2 id="footnotes">Footnotes<a class="headerlink" href="#footnotes" title="Permanent link">&para;</a></h2>
 <p>You can add footnotes[^1] to your notes using the following syntax: [^note]</p>
-<div class="codehilite"><pre><span></span><code>This is a simple footnote[^1].
-
-[<span class="nl">^1</span>]: <span class="na">This is the referenced text.</span>
-[<span class="nl">^2</span>]: <span class="na">Add 2 spaces at the start of each new line.</span>
-  This lets you write footnotes that span multiple lines.
-[<span class="nl">^note</span>]: <span class="na">Named footnotes still appear as numbers, but can make it easier to identify and link references.</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>This is a simple footnote[^1].
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>[<span class="nl">^1</span>]: <span class="na">This is the referenced text.</span>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>[<span class="nl">^2</span>]: <span class="na">Add 2 spaces at the start of each new line.</span>
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>  This lets you write footnotes that span multiple lines.
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>[<span class="nl">^note</span>]: <span class="na">Named footnotes still appear as numbers, but can make it easier to identify and link references.</span>
 </code></pre></div>
-
 <p>[^1]: This is a footnote.
 [^note]:  This is a named footnote.
   Written over multiple lines.</p>
 <p>You can also inline footnotes in a sentence. Note that the caret goes outside the brackets. ^[This is an inline footnote]</p>
-<div class="codehilite"><pre><span></span><code>You can also use inline footnotes. ^[This is an inline footnote.]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>You can also use inline footnotes. ^[This is an inline footnote.]
 </code></pre></div>
-
 <blockquote>
 <p>[!note]
  Inline footnotes only work in Reading View, not in Live Preview.</p>
 </blockquote>
 <h2 id="comments">Comments<a class="headerlink" href="#comments" title="Permanent link">&para;</a></h2>
 <p>You can add comments by wrapping text with <code>%%</code>. Comments are only visible in Editing view.</p>
-<div class="codehilite"><pre><span></span><code>This is an %%inline%% comment.
-
-%%
-This is a block comment.
-
-Block comments can span multiple lines.
-%%
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>This is an %%inline%% comment.
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>%%
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>This is a block comment.
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>Block comments can span multiple lines.
+<a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a>%%
 </code></pre></div>
-
 <hr />
 <hr />
 <h1 id="advanced-formatting-syntax">Advanced Formatting Syntax<a class="headerlink" href="#advanced-formatting-syntax" title="Permanent link">&para;</a></h1>
 <hr />
 <h2 id="tables">Tables<a class="headerlink" href="#tables" title="Permanent link">&para;</a></h2>
 <p>You can create table using vertical bars (<code>|</code>) and hyphens (<code>-</code>). Vertical bars separate columns, and hyphens define the column header.</p>
-<div class="codehilite"><pre><span></span><code>| First name | Last name |
-| ---------- | --------- |
-| Max        | Planck    |
-| Marie      | Curie     |
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>| First name | Last name |
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>| ---------- | --------- |
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>| Max        | Planck    |
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>| Marie      | Curie     |
 </code></pre></div>
-
 <table>
 <thead>
 <tr>
@@ -442,12 +889,11 @@ Block comments can span multiple lines.
 </table>
 <p>The vertical bars or either side of the table are optional.</p>
 <p>Cells don't need to be perfectly aligned with the columns. Each header row must have at least two hyphens.</p>
-<div class="codehilite"><pre><span></span><code>First name | Last name
--- | --
-Max | Planck
-Marie | Curie
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>First name | Last name
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>-- | --
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>Max | Planck
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>Marie | Curie
 </code></pre></div>
-
 <h3 id="format-content-within-a-table">Format content within a table<a class="headerlink" href="#format-content-within-a-table" title="Permanent link">&para;</a></h3>
 <p>You can use <a href="https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax">basic formatting syntax</a> to style content within a table.</p>
 <table>
@@ -470,11 +916,10 @@ Marie | Curie
 </table>
 <p>Vertical bars in tables</p>
 <p>If you want to use <a href="https://help.obsidian.md/Linking+notes+and+files/Aliases">aliases</a>, or to <a href="https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#External%20images">resize an image</a> in your table, you need to add a <code>\</code> before the vertical bar.</p>
-<div class="codehilite"><pre><span></span><code>| First column | Second column |
-| -- | -- |
-|[[Markdown Formatting Guide#Basic Formatting Syntax\|Markdown Basics]]|![Engelbart\|75](https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg)|
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>| First column | Second column |
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>| -- | -- |
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>|[[Markdown Formatting Guide#Basic Formatting Syntax\|Markdown Basics]]|![Engelbart\|75](https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg)|
 </code></pre></div>
-
 <table>
 <thead>
 <tr>
@@ -490,11 +935,10 @@ Marie | Curie
 </tbody>
 </table>
 <p>You can align text to the left, right, or center of a column by adding colons (<code>:</code>) to the header row.</p>
-<div class="codehilite"><pre><span></span><code>Left-aligned text | Center-aligned text | Right-aligned text
-:-- | :--: | --:
-Content | Content | Content
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>Left-aligned text | Center-aligned text | Right-aligned text
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>:-- | :--: | --:
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>Content | Content | Content
 </code></pre></div>
-
 <table>
 <thead>
 <tr>
@@ -518,52 +962,46 @@ Content | Content | Content
 You can also try Mermaid's <a href="https://mermaid-js.github.io/mermaid-live-editor">Live Editor</a> to help you build diagrams before you include them in your notes.</p>
 </blockquote>
 <p>To add a Mermaid diagram, create a <code>mermaid</code> <a href="https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Code%20blocks">code block</a>.</p>
-<div class="codehilite"><pre><span></span><code><span class="sb">```mermaid</span>
-<span class="s">sequenceDiagram</span>
-<span class="s">    Alice-&gt;&gt;+John: Hello John, how are you?</span>
-<span class="s">    Alice-&gt;&gt;+John: John, can you hear me?</span>
-<span class="s">    John--&gt;&gt;-Alice: Hi Alice, I can hear you!</span>
-<span class="s">    John--&gt;&gt;-Alice: I feel great!</span>
-<span class="sb">```</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="sb">```mermaid</span>
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="s">sequenceDiagram</span>
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a><span class="s">    Alice-&gt;&gt;+John: Hello John, how are you?</span>
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a><span class="s">    Alice-&gt;&gt;+John: John, can you hear me?</span>
+<a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a><span class="s">    John--&gt;&gt;-Alice: Hi Alice, I can hear you!</span>
+<a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a><span class="s">    John--&gt;&gt;-Alice: I feel great!</span>
+<a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a><span class="sb">```</span>
 </code></pre></div>
-
-<div class="codehilite"><pre><span></span><code><span class="n">sequenceDiagram</span>
-<span class="w">    </span><span class="n">Alice</span><span class="o">-&gt;&gt;+</span><span class="n">John</span><span class="o">:</span><span class="w"> </span><span class="n">Hello</span><span class="w"> </span><span class="n">John</span><span class="p">,</span><span class="w"> </span><span class="n">how</span><span class="w"> </span><span class="n">are</span><span class="w"> </span><span class="n">you</span><span class="o">?</span>
-<span class="w">    </span><span class="n">Alice</span><span class="o">-&gt;&gt;+</span><span class="n">John</span><span class="o">:</span><span class="w"> </span><span class="n">John</span><span class="p">,</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="n">hear</span><span class="w"> </span><span class="n">me</span><span class="o">?</span>
-<span class="w">    </span><span class="n">John</span><span class="o">--&gt;&gt;-</span><span class="n">Alice</span><span class="o">:</span><span class="w"> </span><span class="n">Hi</span><span class="w"> </span><span class="n">Alice</span><span class="p">,</span><span class="w"> </span><span class="n">I</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">hear</span><span class="w"> </span><span class="n">you</span><span class="o">!</span>
-<span class="w">    </span><span class="n">John</span><span class="o">--&gt;&gt;-</span><span class="n">Alice</span><span class="o">:</span><span class="w"> </span><span class="n">I</span><span class="w"> </span><span class="n">feel</span><span class="w"> </span><span class="n">great</span><span class="o">!</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>sequenceDiagram
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>    Alice-&gt;&gt;+John: Hello John, how are you?
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a>    Alice-&gt;&gt;+John: John, can you hear me?
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a>    John--&gt;&gt;-Alice: Hi Alice, I can hear you!
+<a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a>    John--&gt;&gt;-Alice: I feel great!
 </code></pre></div>
-
-<div class="codehilite"><pre><span></span><code><span class="sb">```mermaid</span>
-<span class="s">graph TD</span>
-
-<span class="s">Biology --&gt; Chemistry</span>
-<span class="sb">```</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="sb">```mermaid</span>
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a><span class="s">graph TD</span>
+<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a>
+<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a><span class="s">Biology --&gt; Chemistry</span>
+<a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a><span class="sb">```</span>
 </code></pre></div>
-
-<div class="codehilite"><pre><span></span><code><span class="nf">graph</span><span class="w"> </span><span class="n">TD</span>
-
-<span class="n">Biology</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">Chemistry</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>graph TD
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>
+<a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>Biology --&gt; Chemistry
 </code></pre></div>
-
 <h3 id="linking-files-in-a-diagram">Linking files in a diagram<a class="headerlink" href="#linking-files-in-a-diagram" title="Permanent link">&para;</a></h3>
 <p>You can create <a href="https://help.obsidian.md/Linking+notes+and+files/Internal+links">internal links</a> in your diagrams by attaching the <code>internal-link</code> <a href="https://mermaid.js.org/syntax/flowchart.html#classes">class</a> to your nodes.</p>
-<div class="codehilite"><pre><span></span><code><span class="sb">```mermaid</span>
-<span class="s">graph TD</span>
-
-<span class="s">Biology --&gt; Chemistry</span>
-
-<span class="s">class Biology,Chemistry internal-link;</span>
-<span class="sb">```</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="sb">```mermaid</span>
+<a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a><span class="s">graph TD</span>
+<a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>
+<a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a><span class="s">Biology --&gt; Chemistry</span>
+<a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a>
+<a id="__codelineno-35-6" name="__codelineno-35-6" href="#__codelineno-35-6"></a><span class="s">class Biology,Chemistry internal-link;</span>
+<a id="__codelineno-35-7" name="__codelineno-35-7" href="#__codelineno-35-7"></a><span class="sb">```</span>
 </code></pre></div>
-
-<div class="codehilite"><pre><span></span><code><span class="nf">graph</span><span class="w"> </span><span class="n">TD</span>
-
-<span class="n">Biology</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">Chemistry</span>
-
-<span class="n">class</span><span class="w"> </span><span class="n">Biology</span><span class="p">,</span><span class="n">Chemistry</span><span class="w"> </span><span class="n">internal</span><span class="o">-</span><span class="n">link</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>graph TD
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>
+<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a>Biology --&gt; Chemistry
+<a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a>
+<a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a>class Biology,Chemistry internal-link;
 </code></pre></div>
-
 <blockquote>
 <p>[!note]</p>
 <p>Internal links from diagrams don't show up in the <a href="https://help.obsidian.md/Plugins/Graph+view">Graph view</a>.</p>
@@ -577,43 +1015,45 @@ B[Chemistry]</p>
 ```
 ````</p>
 </blockquote>
-<div class="codehilite"><pre><span></span><code><span class="n">graph</span><span class="w"> </span><span class="n">TD</span>
-
-<span class="n">A</span><span class="o">[</span><span class="n">Biology</span><span class="o">]</span>
-<span class="n">B</span><span class="o">[</span><span class="n">Chemistry</span><span class="o">]</span>
-
-<span class="n">A</span><span class="w"> </span><span class="c1">--&gt; B</span>
-
-<span class="k">class</span><span class="w"> </span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">D</span><span class="p">,</span><span class="n">E</span><span class="p">,</span><span class="n">F</span><span class="p">,</span><span class="n">G</span><span class="p">,</span><span class="n">H</span><span class="p">,</span><span class="n">I</span><span class="p">,</span><span class="n">J</span><span class="p">,</span><span class="n">K</span><span class="p">,</span><span class="n">L</span><span class="p">,</span><span class="n">M</span><span class="p">,</span><span class="n">N</span><span class="p">,</span><span class="n">O</span><span class="p">,</span><span class="n">P</span><span class="p">,</span><span class="n">Q</span><span class="p">,</span><span class="n">R</span><span class="p">,</span><span class="n">S</span><span class="p">,</span><span class="n">T</span><span class="p">,</span><span class="n">U</span><span class="p">,</span><span class="n">V</span><span class="p">,</span><span class="n">W</span><span class="p">,</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">,</span><span class="n">Z</span><span class="w"> </span><span class="n">internal</span><span class="o">-</span><span class="n">link</span><span class="p">;</span>
-</code></pre></div>
-
-<p>This way, each letter node becomes an internal link, with the <a href="https://mermaid.js.org/syntax/flowchart.html#a-node-with-text">node text</a> as the link text.</p>
-<blockquote>
-<p>[!note]
-If you use special characters in your note names, you need to put the note name in double quotes.
-<code>class "⨳ special character" internal-link</code></p>
-<p>Or, <code>A["⨳ special character"]</code>. </p>
-</blockquote>
-<p>For more information about creating diagrams, refer to the <a href="https://mermaid.js.org/intro/">official Mermaid docs</a>.</p>
-<h2 id="math">Math<a class="headerlink" href="#math" title="Permanent link">&para;</a></h2>
-<p>You can add math expressions to your notes using <a href="http://docs.mathjax.org/en/latest/basic/mathjax.html">MathJax</a> and the LaTeX notation.</p>
-<p>To add a MathJax expression to your note, surround it with double dollar signs (<code>$$</code>).</p>
-<div class="codehilite"><pre><span></span><code>$$
-\begin{vmatrix}a &amp; b\\
-c &amp; d
-\end{vmatrix}=ad-bc
-$$
-</code></pre></div>
-
+<p>```mermaid
+graph TD</p>
+<p>A[Biology]
+B[Chemistry]</p>
+<p>A --&gt; B</p>
+<p>class A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z internal-link;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>This way, each letter node becomes an internal link, with the [node text](https://mermaid.js.org/syntax/flowchart.html#a-node-with-text) as the link text.
+<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>
+<a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a>&gt; [!note]
+<a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a>&gt; If you use special characters in your note names, you need to put the note name in double quotes.
+<a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a>&gt; ```
+<a id="__codelineno-37-6" name="__codelineno-37-6" href="#__codelineno-37-6"></a>&gt; class &quot;⨳ special character&quot; internal-link
+<a id="__codelineno-37-7" name="__codelineno-37-7" href="#__codelineno-37-7"></a>&gt; ```
+<a id="__codelineno-37-8" name="__codelineno-37-8" href="#__codelineno-37-8"></a>&gt;
+<a id="__codelineno-37-9" name="__codelineno-37-9" href="#__codelineno-37-9"></a>&gt; Or, `A[&quot;⨳ special character&quot;]`. 
+<a id="__codelineno-37-10" name="__codelineno-37-10" href="#__codelineno-37-10"></a>
+<a id="__codelineno-37-11" name="__codelineno-37-11" href="#__codelineno-37-11"></a>For more information about creating diagrams, refer to the [official Mermaid docs](https://mermaid.js.org/intro/).
+<a id="__codelineno-37-12" name="__codelineno-37-12" href="#__codelineno-37-12"></a>
+<a id="__codelineno-37-13" name="__codelineno-37-13" href="#__codelineno-37-13"></a>## Math
+<a id="__codelineno-37-14" name="__codelineno-37-14" href="#__codelineno-37-14"></a>
+<a id="__codelineno-37-15" name="__codelineno-37-15" href="#__codelineno-37-15"></a>You can add math expressions to your notes using [MathJax](http://docs.mathjax.org/en/latest/basic/mathjax.html) and the LaTeX notation.
+<a id="__codelineno-37-16" name="__codelineno-37-16" href="#__codelineno-37-16"></a>
+<a id="__codelineno-37-17" name="__codelineno-37-17" href="#__codelineno-37-17"></a>To add a MathJax expression to your note, surround it with double dollar signs (`$$`).
+<a id="__codelineno-37-18" name="__codelineno-37-18" href="#__codelineno-37-18"></a>
+<a id="__codelineno-37-19" name="__codelineno-37-19" href="#__codelineno-37-19"></a>```md
+<a id="__codelineno-37-20" name="__codelineno-37-20" href="#__codelineno-37-20"></a>$$
+<a id="__codelineno-37-21" name="__codelineno-37-21" href="#__codelineno-37-21"></a>\begin{vmatrix}a &amp; b\\
+<a id="__codelineno-37-22" name="__codelineno-37-22" href="#__codelineno-37-22"></a>c &amp; d
+<a id="__codelineno-37-23" name="__codelineno-37-23" href="#__codelineno-37-23"></a>\end{vmatrix}=ad-bc
+<a id="__codelineno-37-24" name="__codelineno-37-24" href="#__codelineno-37-24"></a>$$
+</code></pre></div></p>
 <p>$$
 \begin{vmatrix}a &amp; b\
 c &amp; d
 \end{vmatrix}=ad-bc
 $$</p>
 <p>You can also inline math expressions by wrapping it in <code>$</code> symbols.</p>
-<div class="codehilite"><pre><span></span><code>This is an inline math expression: $e^{2i\pi} = 1$.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>This is an inline math expression: $e^{2i\pi} = 1$.
 </code></pre></div>
-
 <p>This is an inline math expression: $e^{2i\pi} = 1$.</p>
 <p>For more information about the syntax, refer to <a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">MathJax basic tutorial and quick reference</a>.</p>
 <p>For a list of supported MathJax packages, refer to <a href="http://docs.mathjax.org/en/latest/input/tex/extensions/index.html">The TeX/LaTeX Extension List</a>.</p>
@@ -624,51 +1064,66 @@ $$</p>
 - <a href="https://help.obsidian.md/Editing+and+formatting/Obsidian+Flavored+Markdown">Obsidian Flavored Markdown</a></p>
 <hr />
 <hr />
-              
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
             </div>
-          </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../Welcome/" class="btn btn-neutral float-left" title="Welcome"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../create%20a%20link/" class="btn btn-neutral float-right" title="Create a Link">Next <span class="icon icon-circle-arrow-right"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-  </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
           
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="Versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
-    
-    
-      <span><a href="../Welcome/" style="color: #fcfcfc">&laquo; Previous</a></span>
-    
-    
-      <span><a href="../create%20a%20link/" style="color: #fcfcfc">Next &raquo;</a></span>
-    
-  </span>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
 </div>
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script>var base_url = "..";</script>
-    <script src="../js/theme_extra.js"></script>
-    <script src="../js/theme.js"></script>
-      <script src="../search/main.js"></script>
-    <script>
-        jQuery(function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        });
-    </script>
-
-</body>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
 </html>
