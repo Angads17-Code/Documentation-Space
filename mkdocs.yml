@@ -1,8 +1,4 @@
 site_name: Documentation Space
 theme:
   name: readthedocs  
-nav:
-  - Home: index.md
-  - Markdown Tutorial: Markdown tutorial.md
-  - Welcome: Welcome.md
-  = Test: Test.md
+
