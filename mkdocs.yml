@@ -3,19 +3,37 @@ site_description: Your club's documentation hub
 site_author: Angads17-Code
 
 theme:
-  name: readthedocs
+  name: material
   palette:
-    primary: indigo
-    accent: indigo
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode (default)
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
   features:
     - navigation.tabs
     - navigation.sections
     - navigation.expand
+    - navigation.top
     - search.suggest
     - search.highlight
+    - content.code.copy
 
 plugins:
   - search
+  - roamlinks  # Makes [[wikilinks]] work!
 
 nav:
   - Home: index.md
@@ -25,9 +43,14 @@ nav:
   - Space is Cool: Space is soo cool!.md
   - Test: Test.md
 
-# Extra settings
 markdown_extensions:
   - admonition
-  - codehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
   - toc:
       permalink: true
