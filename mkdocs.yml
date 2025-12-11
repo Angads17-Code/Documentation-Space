@@ -3,33 +3,15 @@ site_description: Your club's documentation hub
 site_author: Angads17-Code
 
 theme:
-  name: material  # We'll configure it to look like docs
-  
-  palette:
-    # Dark mode (default)
-    - scheme: slate
-      primary: blue grey
-      accent: blue
-      toggle:
-        icon: material/weather-night
-        name: Switch to light mode
-    
-    # Light mode
-    - scheme: default
-      primary: blue grey
-      accent: blue
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to dark mode
-  
-  features:
-    - navigation.sections
-    - navigation.expand
-    - navigation.indexes
-    - toc.integrate  # TOC in sidebar (vertical!)
-    - navigation.top
-    - search.suggest
-    - search.highlight
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - python
+    - javascript
+  navigation_depth: 4
+  collapse_navigation: false
+  sticky_navigation: true
 
 plugins:
   - search
@@ -38,9 +20,13 @@ plugins:
 
 markdown_extensions:
   - admonition
-  - pymdownx.highlight
-  - pymdownx.superfences
-  - attr_list
-  - md_in_html
+  - codehilite:
+      guess_lang: false
   - toc:
       permalink: true
+  - attr_list
+  - md_in_html
+
+# IMPORTANT: This makes the dark mode CSS load
+extra_css:
+  - stylesheets/dark.css
