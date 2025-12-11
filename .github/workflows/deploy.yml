@@ -24,7 +24,7 @@ jobs:
 
       - name: Install MkDocs and plugins
         run: |
-          pip install mkdocs mkdocs-material mkdocs-roamlinks-plugin
+          pip install mkdocs mkdocs-roamlinks-plugin mkdocs-awesome-pages-plugin
 
       - name: Build and deploy
         run: |
